@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+:root {
+    --marrom-1: #BC6C25;
+    --marrom-2: #DDA15E;
+    --verde-1: #283618;
+    --verde-2: #606C38;
+    --creme: #FEFAE0;
+}
+
+body {
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    background-color: var(--creme);
+    color: #222;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: .1rem;
+}
+
+/* ---------- Starts header ---------- */
+.info__container {
+    background-color: var(--marrom-1);
+    color: #fff;
+}
+
+.info__container .info {
+    max-width: 960px;
+    margin: auto;
+    padding: 1rem .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info__container .info a {
+    color: #fff;
+}
+
+header {
+    background-color: var(--marrom-2);
+}
+
+nav {
+    max-width: 960px;
+    margin: auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+}
+
+nav .nav__logo a {
+    font: 800 2em "Nunito";
+    margin: 0 .5rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul a {
+    display: block;
+    padding: .5rem;
+    font: 400 1.2em 'Nunito';
+    transition: .5s all;
+}
+
+nav ul a:hover {
+    font-weight: 800;
+}
+/* ---------- Finishes header ---------- */
+
+/* ---------- Starts about-section ---------- */
+main > h1 {
+    max-width: 960px;
+    font: 700 3em 'Nunito';
+    line-height: 1;
+    margin: 5rem auto;
+    padding: 0 .5rem;
+}
+
+.about__section {
+    max-width: 960px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 5rem .5rem;
+    border-top: 1px solid var(--verde-1);
+    border-bottom: 1px solid var(--verde-1);
+}
+
+.about__section .about__info {
+    flex: 2 1 300px;
+    padding-right: .5rem;
+}
+
+.about__section .about__info h1 {
+    font: 700 2.8em 'Nunito';
+    margin-bottom: .5rem;
+}
+
+.about__section .about__info p {
+    font: 500 1.2em 'Nunito';
+    line-height: 1.5em;
+    color: #7c7c7c;
+    margin-bottom: 1rem;
+}
+
+.about__section .about__img {
+    max-width: 500px;
+    display: flex;
+}
+
+.about__section .about__img div {
+    flex: 1 1 160px;
+    margin: 0 .5rem;
+}
+/* ---------- Finishes about-section ---------- */
+
+/* ---------- Starts product-section ---------- */
+.product__section {
+    max-width: 960px;
+    margin: auto;
+    padding: 5rem .5rem;
+    border-top: 1px solid var(--verde-1);
+    border-bottom: 1px solid var(--verde-1);
+}
+
+.product__section h1 {
+    font: 700 2.8em 'Nunito';
+    margin-bottom: 5rem;
+}
+
+.product__section .products__container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products__cards {
+    flex: 1 1 175px;
+    margin: .5rem;
+}
+
+.products__cards h2 {
+    font-size: 2em;
+    color: var(--verde-1);
+    background-color: #fef0e1;
+    padding: 2rem .8rem;
+}
+
+.products__cards img {
+    object-fit: cover;
+    height: 300px;
+}
+
+.purple {
+    border-top: 6px solid var(--marrom-1);
+}
+
+.pink {
+    border-top: 6px solid var(--verde-1);
+}
+
+.blue {
+    border-top: 6px solid var(--verde-2);
+}
+/* ---------- Finishes product-section ---------- */
+
+/* ---------- Starts price-section ---------- */
+.price__section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    background: #f7f7f7 url(media/fundo.jpg) center center fixed;
+    padding: 5rem calc((100% - 1100px) / 2);
+    gap: 2rem;
+}
+
+.price__section .price__card {
+    background-color: #f7f7f79a;
+    flex: 1;
+    border: 1px solid #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.price__section .price__card h2 {
+    font-size: 2em;
+    color: var(--verde-1);
+}
+
+.price__section .price__card h3 {
+    max-width: 300px;
+    margin: 2rem auto;
+    font: 800 1.5em 'Nunito';
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 1rem;
+}
+
+.price__section .price__card ul {
+    max-width: 300px;
+    margin: 2rem auto;
+    font: italic 500 1em 'Nunito';
+    line-height: 2em;
+    color: var(--verde-1);
+}
+
+.price__section .price__card ul li {
+    list-style-type: disc;
+}
+
+.price__section .price__card a {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    color: var(--verde-1);
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid var(--verde-1);
+    padding: 1rem;
+    transition: .5s all;
+}
+
+.price__section .price__card a:hover {
+    font-weight: 800;
+    border-width: 2px;
+}
+/* ---------- Finishes price-section ---------- */
+
+/* ---------- Starts quality-section ---------- */
+.quality__section {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 6rem .6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+}
+
+.quality__cards {
+    flex: 1 1 300px;
+}
+
+.quality__cards h2 {
+    font-size: 2em;
+    color: #a4a4a4;
+    margin-bottom: .5rem;
+}
+
+.quality__cards h2::before {
+    content: '';
+    width: 6px;
+    height: 28px;
+    margin-right: .6rem;
+    display: inline-block;
+    background-color: #f9265e;
+}
+
+.quality__cards:nth-of-type(3n+1) h2::before {
+    background-color: var(--marrom-1);
+}
+
+.quality__cards:nth-of-type(3n+2) h2::before {
+    background-color: var(--verde-1);
+}
+
+.quality__cards:nth-of-type(3n+3) h2::before {
+    background-color: var(--marrom-2);
+}
+
+.quality__cards p {
+    font-size: 1.2em;
+    line-height: 1.4;
+    color: #7c7c7c;
+}
+/* ---------- Finishes quality-section ---------- */
+
+/* ---------- Starts newsletter-section ---------- */
+.newsletter__section {
+    background: var(--verde-2);
+    padding: 5rem calc((100% - 960px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.newsletter__section .newsletter__title {
+    flex: 1 1 260px;
+    margin: 0 .5rem;
+}
+
+.newsletter__section .newsletter__title h1 {
+    font-size: 2.6em;
+    color: #fff;
+}
+
+.newsletter__section .newsletter__title p {
+    max-width: 200px;
+    font: italic 500 1.2em 'Nunito';
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.newsletter__section .newsletter__form {
+    flex: 2 1 260px;
+    margin: 0 .5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsletter__section .newsletter__form input {
+    flex: 3 1 200px;
+    font: italic 500 1.2em 'Nunito';
+    color: var(--verde-1);
+    border: 2px solid var(--verde-1);
+    background: transparent;
+    padding: 1rem;
+    margin: 0;
+    border-radius: 0;
+}
+
+.newsletter__section .newsletter__form button {
+    flex: 1 1 200px;
+    font: 500 1.2em 'Nunito';
+    background-color: var(--verde-1);
+    color: #fff;
+    border: none;
+    padding: 1rem .5rem;
+    margin: 0;
+    cursor: pointer;
+}
+/* ---------- Finishes newsletter-section ---------- */
+
+/* ---------- Starts footer ---------- */
+footer {
+    background: var(--verde-1);
+    padding: 5rem calc((100% - 960px) / 2);
+    color: #fff;
+    text-align: center;
+}
+
+footer p {
+    font: 500 1.5em 'Nunito';
+    margin: 0 .5rem;
+}
+/* ---------- Finishes footer ---------- */
+
+
+@media (max-width: 768px) {
+    .price__section .price__card:nth-child(3) {
+        order: -1;
+    }
+}
+
+
+
+
